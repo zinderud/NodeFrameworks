@@ -1,0 +1,17 @@
+<div class="row text-center">
+  <div class="col-md-3 col-sm-6 hero-feature btn" *ngFor="let article of articles" (click)="onSelect(article)" >
+    <div class="thumbnail">
+      <img src="http://placehold.it/800x500" alt="">
+      <div class="caption">
+        <h4>{{article.name}}</h4>
+        <h6 [innerHTML]="article.description"></h6>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+<div class="row text-center">
+  <div class="col-lg-12">
+    <div class="btn btn-default"(click)="loadMore()">Загрузить еще</div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <form name="articleForm">
+    <div class="form-group">
+      <label>Название:</label>
+      <input type="text" class="form-control" [(ngModel)]="article.name" name="name"/>
+    </div>
+    <div class="form-group">
+      <label>Описание:</label>
+      <ckeditor
+        [(ngModel)]="article.content"
+        name="description" id="editor"
+        [config]="{uiColor: '#99000'}"
+        (change)="onChange($event)"
+        (ready)="onReady($event)"
+        debounce="500">
+      </ckeditor>
+      <!--<textarea class="form-control" [(ngModel)]="article.description" name="description" id="editor"></textarea>-->
+    </div>
+    <button type="submit" class="btn btn-default" (click)="onSubmit()">Опубликовать</button>
+  </form>
+
+</div>
