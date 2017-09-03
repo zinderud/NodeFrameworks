@@ -49,6 +49,10 @@
     "blogs": {
       "collection": "blog",
       "via": "contributors"
+    },
+    "blogcategories": {
+      "collection": "blogcategory",
+      "via": "contributors"
     }
   },
   "autoCreatedAt": true,

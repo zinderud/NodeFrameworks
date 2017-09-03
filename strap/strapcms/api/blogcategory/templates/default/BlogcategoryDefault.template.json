@@ -1,0 +1,11 @@
+{
+  "default": {
+    "attributes": {
+      "title": {},
+      "slug": {},
+      "seoDescription": {},
+      "seoTitle": {}
+    },
+    "displayedAttribute": "id"
+  }
+}

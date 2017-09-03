@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /blogcategory": {
+      "controller": "Blogcategory",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /blogcategory/:id": {
+      "controller": "Blogcategory",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /blogcategory": {
+      "controller": "Blogcategory",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /blogcategory/:id": {
+      "controller": "Blogcategory",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /blogcategory/:id": {
+      "controller": "Blogcategory",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /blogcategory/:parentId/:relation": {
+      "controller": "Blogcategory",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /blogcategory/:parentId/:relation/:id": {
+      "controller": "Blogcategory",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

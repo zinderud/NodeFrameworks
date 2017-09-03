@@ -24,7 +24,8 @@
         "port": 27017,
         "user": "",
         "password": "",
-        "database": "strapcms"
+        "database": "strapcms",
+        "migrate": "safe"
       }
     }
   }

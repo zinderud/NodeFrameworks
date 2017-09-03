@@ -1,0 +1,53 @@
+{
+  "identity": "blogcategory",
+  "connection": "strapcmsmango",
+  "defaultTemplate": "default",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  "id": {
+    "type": "integer"
+  },
+  "title": {
+    "type": "string"
+  },
+  "slug": {
+    "type": "string"
+  },
+  "updatedAt": {
+    "type": "datetime"
+  },
+  "createdAt": {
+    "type": "datetime"
+  },
+  "seoDescription": {
+    "type": "string"
+  },
+  "seoTitle": {
+    "type": "string"
+  },
+  "lang": {
+    "type": "string",
+    "required": true
+  },
+  "template": {
+    "type": "string",
+    "required": true
+  },
+  "id_ref": {
+    "type": "int"
+  },
+  "createdBy": {
+    "model": "user"
+  },
+  "updatedBy": {
+    "model": "user"
+  },
+  "contributors": {
+    "collection": "user",
+    "via": "blogcategories"
+  }
+},
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
