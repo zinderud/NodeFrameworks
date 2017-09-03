@@ -1,3 +1,3 @@
-# strapCms
+# strapcms
 
-A quick description of strapCms.
+A quick description of strapcms.

@@ -1,18 +1,18 @@
 {
   "identity": "blog",
-  "connection": "default",
+  "connection": "strapcmsmango",
   "defaultTemplate": "default",
   "displayedAttribute": "",
   "schema": true,
   "attributes": {
+  "id": {
+    "type": "integer"
+  },
   "title": {
     "type": "string"
   },
   "slug": {
     "type": "string"
-  },
-  "id": {
-    "type": "integer"
   },
   "content": {
     "type": "string"

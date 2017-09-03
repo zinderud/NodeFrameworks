@@ -2,12 +2,14 @@
   "default": {
     "attributes": {
       "title": {
-        "required": true
+        "minLength": 10
       },
       "slug": {
-        "required": true
+        "minLength": 5
       },
-      "content": {},
+      "content": {
+        "minLength": 20
+      },
       "categoryId": {},
       "author": {},
       "online": {},
