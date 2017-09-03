@@ -49,6 +49,10 @@
     "cars": {
       "collection": "car",
       "via": "contributors"
+    },
+    "sades": {
+      "collection": "sade",
+      "via": "contributors"
     }
   },
   "autoCreatedAt": true,
