@@ -1,0 +1,57 @@
+{
+  "routes": {
+    "GET /blog": {
+      "controller": "Blog",
+      "action": "find",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "GET /blog/:id": {
+      "controller": "Blog",
+      "action": "findOne",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /blog": {
+      "controller": "Blog",
+      "action": "create",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "PUT /blog/:id": {
+      "controller": "Blog",
+      "action": "update",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    },
+    "DELETE /blog/:id": {
+      "controller": "Blog",
+      "action": "destroy",
+      "policies": [
+        "isAuthorized"
+      ]
+    },
+    "POST /blog/:parentId/:relation": {
+      "controller": "Blog",
+      "action": "add",
+      "policies": [
+        "isAuthorized",
+        "addDataCreate"
+      ]
+    },
+    "DELETE /blog/:parentId/:relation/:id": {
+      "controller": "Blog",
+      "action": "remove",
+      "policies": [
+        "isAuthorized",
+        "addDataUpdate"
+      ]
+    }
+  }
+}

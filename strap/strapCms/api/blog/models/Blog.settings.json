@@ -1,0 +1,68 @@
+{
+  "identity": "blog",
+  "connection": "default",
+  "defaultTemplate": "default",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+  "title": {
+    "type": "string"
+  },
+  "slug": {
+    "type": "string"
+  },
+  "id": {
+    "type": "integer"
+  },
+  "content": {
+    "type": "string"
+  },
+  "categoryId": {
+    "type": "integer"
+  },
+  "author": {
+    "type": "string"
+  },
+  "online": {
+    "type": "boolean"
+  },
+  "updatedAt": {
+    "type": "datetime"
+  },
+  "createdAt": {
+    "type": "datetime"
+  },
+  "publishDate": {
+    "type": "datetime"
+  },
+  "seoTitle": {
+    "type": "string"
+  },
+  "seoDescription": {
+    "type": "string"
+  },
+  "lang": {
+    "type": "string",
+    "required": true
+  },
+  "template": {
+    "type": "string",
+    "required": true
+  },
+  "id_ref": {
+    "type": "int"
+  },
+  "createdBy": {
+    "model": "user"
+  },
+  "updatedBy": {
+    "model": "user"
+  },
+  "contributors": {
+    "collection": "user",
+    "via": "blogs"
+  }
+},
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}

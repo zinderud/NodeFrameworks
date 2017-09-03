@@ -1,0 +1,20 @@
+{
+  "default": {
+    "attributes": {
+      "title": {
+        "required": true
+      },
+      "slug": {
+        "required": true
+      },
+      "content": {},
+      "categoryId": {},
+      "author": {},
+      "online": {},
+      "publishDate": {},
+      "seoTitle": {},
+      "seoDescription": {}
+    },
+    "displayedAttribute": "id"
+  }
+}

@@ -45,6 +45,10 @@
     "filesCreated": {
       "collection": "upload",
       "via": "createdBy"
+    },
+    "blogs": {
+      "collection": "blog",
+      "via": "contributors"
     }
   },
   "autoCreatedAt": true,
